@@ -1,0 +1,23 @@
+.container-portada img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-mvv {
+  padding: 25px;
+}
+
+.container-mvv img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.container-mvv p {
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .container-mvv {
+    padding: initial;
+  }
+}
