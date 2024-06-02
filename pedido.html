@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/cart-styles.css" rel="stylesheet" />
+    <link href="css/pedido-styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Pepe Librería</title>
+  </head>
+  <body>
+    <div
+      id="panel-pedido"
+      class="container-fluid terciary-bg-color d-flex flex-column justify-content-center align-items-center"
+    >
+      <form id="order-form">
+        <div class="row w-100">
+          <div
+            class="col flex-column align-items-center d-flex justify-content-center mt-2"
+          >
+            <img id="logo" alt="logo" src="img/Logo.webp" />
+            <p class="lead mt-2">Tienda > Carrito > Pedido</p>
+          </div>
+        </div>
+        <div
+          class="container h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="row w-100 h-75">
+            <div
+              class="col h-100 d-flex justify-content-center flex-column align-items-center border shadow rounded m-3 p-5"
+            >
+              <h3 class="align-self-start mb-5">Información de pago</h3>
+
+              <div class="mb-3 w-100">
+                <label for="rut" class="form-label">Ingrese su rut</label>
+                <input
+                  type="text"
+                  name="rut"
+                  class="form-control"
+                  id="input-rut"
+                />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3 w-100">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="input-name"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3 w-100">
+                    <label for="last_name" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      class="form-control"
+                      id="input-apellido"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 w-100">
+                <label for="categoria" class="form-label">Región</label>
+                <select name="region" id="select-region" class="form-select">
+                  <option disabled selected value="">
+                    Selecciona una opción
+                  </option>
+                  <option value="Valdivia">Los Rios</option>
+                  <option value="Santiago">Metropolitana</option>
+                  <option value="Concepción">Bio Bio</option>
+                </select>
+              </div>
+              <div class="mb-3 w-100">
+                <label for="categoria" class="form-label">Ciudad</label>
+                <select name="country" id="select-country" class="form-select">
+                  <option disabled selected value="">
+                    Selecciona una opción
+                  </option>
+                  <option value="Valdivia">Valdivia</option>
+                  <option value="Santiago">Santiago</option>
+                  <option value="Concepción">Concepción</option>
+                </select>
+              </div>
+              <div class="mb-3 w-100">
+                <label for="address" class="form-label">Dirección</label>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  id="input-address"
+                />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3 w-100">
+                    <label for="phone" class="form-label">Telefono</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control"
+                      id="input-phone"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3 w-100">
+                    <label for="email" class="form-label">
+                      Correo electronico
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      class="form-control"
+                      id="input-email"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col h-100 border shadow rounded m-3 p-5 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h3 class="align-self-start mb-5">Tu compra</h3>
+              <span
+                id="cart-count"
+                class="badge badge-pill badge-danger primary-bg-color invisible"
+              >
+                0
+              </span>
+              <div id="pedido-info-cart"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" id="close-btn">&times;</a>
+      <div id="cart-items">
+        <!-- Productos del carrito se mostrarán aquí -->
+      </div>
+    </div>
+
+    <script src="js/cart-script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
