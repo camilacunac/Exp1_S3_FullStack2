@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/login-styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Pepe Librería</title>
+  </head>
+  <body>
+    <div
+      id="login-section"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="container border shadow rounded">
+        <div class="row">
+          <div
+            class="col d-flex justify-content-center align-items-center flex-column"
+          >
+            <h3 class="mb-3">Registro de usuario</h3>
+            <form
+              id="register-form"
+              class="w-75 d-flex flex-column align-items-center"
+            >
+              <div class="mb-3 w-100">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="input-nombre"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  class="form-control"
+                  id="input-apellido"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  id="input-direccion"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <label for="email" class="form-label">Correo electronico</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="input-email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="input-password"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <label for="confirm-password" class="form-label">
+                  Confirmar contraseña
+                </label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  class="form-control"
+                  id="input-confirm-password"
+                />
+              </div>
+              <p class="text-center">
+                <strong>¿Ya tienes cuenta?</strong>
+                <br />
+                <a href="login.html"><strong>Inicia sesión aquí</strong></a>
+                e ingresa a nuestra comunidad de amantes de los libros.
+              </p>
+              <button type="submit" class="btn btn-primary">Registrarme</button>
+            </form>
+          </div>
+          <div
+            class="col flex-column primary-bg-color d-flex justify-content-center align-items-center"
+          >
+            <img class="shadow" alt="pepe_login" src="img/login/login.webp" />
+            <p class="terciary-color lead m-5">
+              <strong>Bienvenido a Pepe Librería</strong>
+              <br />
+              Nos alegra que te unas a nuestra comunidad de amantes de los
+              libros. Para brindarte la mejor experiencia, necesitamos algunos
+              datos para crear tu cuenta. Por favor, completa todos los campos
+              del formulario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/register-script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
