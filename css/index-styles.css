@@ -1,0 +1,29 @@
+#carousel-portada {
+  height: calc(100vh - 200px);
+}
+#carousel-portada .carousel-inner {
+  height: 100%;
+}
+#carousel-portada .carousel-item img {
+  height: calc(100vh - 200px);
+  object-fit: fill;
+}
+.info-ventas i {
+  font-size: 50px;
+}
+
+.info-ventas .col {
+  margin: 25px;
+  width: 350px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  #carousel-portada {
+    height: auto;
+  }
+  .info-ventas .col {
+    margin: 0px;
+    margin-top: 25px;
+  }
+}
