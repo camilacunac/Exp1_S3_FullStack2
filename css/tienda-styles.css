@@ -1,0 +1,8 @@
+#product-list .cart img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#store-panel {
+  min-height: 100vh;
+}
